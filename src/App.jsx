@@ -16,7 +16,7 @@ function App() {
         {/* Redirect /home → / */}
         <Route path="/home" element={<Navigate to="/" replace />} />
         {/* Any wrong URL → Home */}
-        <Route path="/login" element={<Login/>}/>
+         <Route path="/login" element={<Login />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
