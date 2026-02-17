@@ -6,6 +6,7 @@ import { Navbar } from "./Components/Navbar";
 import { Footer } from "./Components/Footer";
 import Home from "./home/Home";
 import { Login } from "./pages/Login";
+import Products from "./pages/Products";
 function App() {
   return (
     <>
@@ -17,6 +18,8 @@ function App() {
         <Route path="/home" element={<Navigate to="/" replace />} />
         {/* Any wrong URL → Home */}
          <Route path="/login" element={<Login />} />
+
+         <Route path="/products" element={<Products />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
