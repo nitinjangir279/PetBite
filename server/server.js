@@ -6,6 +6,9 @@ require("dotenv").config();
 
 const app = express();
 
+
+app.use("/api/offers", require("./routes/offerRoutes"));
+app.use("/api/cart", require("./routes/cartRoutes"));
 /* =========================
    MIDDLEWARES
 ========================= */

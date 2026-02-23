@@ -25,8 +25,8 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-green-900 text-white w-full">
-      <div className="flex items-center justify-between px-4 py-4 md:px-8">
+    <nav className="bg-green-900 text-white w-full z-100   shadow-md">
+      <div className="flex items-center justify-between px-4 py-4 md:px-8 ">
 
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">

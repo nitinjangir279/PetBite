@@ -7,6 +7,7 @@ import { Footer } from "./Components/Footer";
 import Home from "./home/Home";
 import { Login } from "./pages/Login";
 import Products from "./pages/Products";
+import Offer from "./pages/Offer"
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
          <Route path="/login" element={<Login />} />
 
          <Route path="/products" element={<Products />} />
+
+        <Route path="/offer" element={<Offer />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
